@@ -1,0 +1,292 @@
+:root{
+	--gal-height:22vh;
+}
+
+body{
+	font-family: Roboto;
+	line-height: 1.7;
+	margin: 0;
+	padding: 0;
+
+}
+
+/*Navigation*/
+nav{
+	margin: auto;
+	width: 70%;
+	height: 60px;
+	padding-top: 30px;
+	
+	position: relative;
+}
+
+.nav_icon{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.nav_icon div:nth-child(1){
+	width: 10px;
+	height: 3px;
+	background-color: black;
+	margin: 3px;
+	float: left;
+}
+
+.nav_icon div:nth-child(2){
+	width: 10px;
+	height: 3px;
+	background-color: black;
+	margin: 3px;
+	float: left;
+}
+
+
+.nav_icon div:nth-child(3){
+	width: 10px;
+	height: 3px;
+	background-color: black;
+	margin: 3px;
+	float: left;
+}
+
+.logo_words{
+	font-weight: bold;
+	font-size: 16px;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.logo_image{
+	position: absolute;
+	right: 0;
+}
+
+/*Hidden Navigation*/
+.hidden_nav{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: none;
+	background: black;
+	color: white;
+}
+
+.hidden_nav ul{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.hidden_nav ul li{
+	display: inline-block;
+	padding: 40px;
+}
+
+/*Banner*/
+
+.banner{
+	width: 100%;
+	height: 55vh;
+	background:url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/*Content*/
+.content{
+	margin: auto;
+	width: 70%;
+	margin-top:35px; 
+}
+
+.Description p:nth-child(1){
+	width: 380px;
+	font-size: 14px;
+	color: #545454;
+	letter-spacing: .3px;
+}
+
+.Description p:nth-child(2){
+	font-size: 8px;
+	padding-top: 20px;
+}
+
+/*Gallery*/
+.Gallery_Holder{
+
+	position: absolute;
+	top: 18%;
+	right: 15%;
+	background: white;
+	padding: 40px;
+	width: 35%;
+	box-shadow: 3px 3px 8px grey;
+}
+
+.mother{
+
+}
+/*Gallery Set3*/
+.Gallery_Container{
+	display: grid;
+	
+	height: var(--gal-height);
+
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: 1.2fr 1.2fr;
+
+	grid-template-areas: 
+	"Same_picture Different_picture_1 Different_picture_2"
+	"Same_picture Different_picture_3 Different_picture_4";
+
+	grid-gap:.5rem;
+
+    
+}
+
+.Gallery_Container div:nth-child(1){
+	grid-area: Same_picture;
+	background: url(../images/gal1.png);
+	background-size: cover;
+	transition: .5s all ease-in-out;
+	
+}
+
+.Gallery_Container div:nth-child(2){
+	grid-area: Different_picture_1;
+	background: url(../images/gal2.png);
+	transition: .5s all ease-in-out;
+	background-size: cover;
+}
+
+.Gallery_Container div:nth-child(3){
+	grid-area: Different_picture_2;
+	background: url(../images/gal3.png);
+	transition: .5s all ease-in-out;
+	background-size: cover;
+}
+
+.Gallery_Container div:nth-child(4){
+	grid-area: Different_picture_3;
+	background: url(../images/gal4.png);
+	transition: .5s all ease-in-out;
+	background-size: cover;
+}
+
+.Gallery_Container div:nth-child(5){
+	grid-area: Different_picture_4;
+	background: url(../images/gal5.png);
+	transition: .5s all ease-in-out;
+	background-size: cover;
+}
+
+/*Gallery Set2*/
+.Gallery_Container_2{
+	display: grid;
+	
+	height: var(--gal-height);
+
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows:1.2fr 1.2fr;
+
+	grid-template-areas: 
+	"picture1 picture2 SamePicture"
+	"picture3 picture4 SamePicture";
+
+	grid-gap: .5rem;
+	margin-top: .5rem;
+}
+
+.Gallery_Container_2 div:nth-child(1){
+	grid-area: picture1;
+	background: url(../images/gal6.png);
+	background-size: cover;
+}
+
+.Gallery_Container_2 div:nth-child(2){
+	grid-area: picture2;
+	background: url(../images/gal7.png);
+	background-size: cover;
+}
+
+.Gallery_Container_2 div:nth-child(3){
+	grid-area: picture3;
+	background: url(../images/gal8.png);
+	background-size: cover;
+}
+
+.Gallery_Container_2 div:nth-child(4){
+	grid-area: picture4;
+	background: url(../images/gal9.png);
+	background-size: cover;
+}
+
+.Gallery_Container_2 div:nth-child(5){
+	grid-area: SamePicture;
+	background: url(../images/gal10.png);
+	background-size: cover;
+}
+
+/*Gallery Set3*/
+
+.Gallery_Container_3{
+	
+	margin-top: .5rem;
+	
+}
+
+.Gallery_Container_3 div:nth-child(1){
+	background: url(../images/gall11.png);
+	background-size: cover;
+	height: 20vh;
+}
+
+/*Gallery Hover*/
+.Gallery_Container div:nth-child(1):hover{
+
+	background:url(../images/color_images/gal_01.png);
+	background-size: 100%;
+	cursor: pointer;
+	transition: .3s all ease-in-out;
+}
+
+.Gallery_Container div:nth-child(2):hover{
+
+	background:url(../images/color_images/gal_02.png);
+	background-size: 100%;
+	cursor: pointer;
+	transition: .3s all ease-in-out;
+}
+.Gallery_Container div:nth-child(3):hover{
+
+	background:url(../images/color_images/gal_03.png);
+	background-size: 100%;
+	cursor: pointer;
+	transition: .3s all ease-in-out;
+}
+.Gallery_Container div:nth-child(4):hover{
+
+	background:url(../images/color_images/gal_04.png);
+	background-size: 100%;
+	cursor: pointer;
+	transition: .3s all ease-in-out;
+}
+.Gallery_Container div:nth-child(5):hover{
+
+	background:url(../images/color_images/gal_05.png);
+	background-size: 100%;%;
+	cursor: pointer;
+	transition: .3s all ease-in-out;
+}
+
+
+
+
+
+
