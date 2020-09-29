@@ -106,14 +106,14 @@ nav{
 }
 
 .Description p:nth-child(1){
-	width: 380px;
-	font-size: 14px;
+	width: 390px;
+	font-size: 16px;
 	color: #545454;
 	letter-spacing: .3px;
 }
 
 .Description p:nth-child(2){
-	font-size: 8px;
+	font-size: 10px;
 	padding-top: 20px;
 }
 
@@ -132,7 +132,7 @@ nav{
 .mother{
 
 }
-/*Gallery Set3*/
+/*Gallery Set1*/
 .Gallery_Container{
 	display: grid;
 	
@@ -155,36 +155,181 @@ nav{
 	background: url(../images/gal1.png);
 	background-size: cover;
 	transition: .5s all ease-in-out;
+	position: relative;
+	overflow: hidden;
 	
 }
+
+	.Gallery_Container div:nth-child(1) .Pic_ProjectColor{
+
+		background: orange;
+		position: absolute;
+		width: 100%;
+		padding: 20px;
+		bottom: -50px;
+
+
+	}
+
+	.Gallery_Container div:nth-child(1) .Pic_ProjectName{
+
+			
+		position: absolute;
+		background: rgba(0,0,0,0);
+		padding: 5px;
+		padding-left: 20px;
+		color: white;
+		font-size: 17px;
+		bottom: -50px;
+		letter-spacing: .8px;
+		font-weight: 300;
+
+
+	}
 
 .Gallery_Container div:nth-child(2){
 	grid-area: Different_picture_1;
 	background: url(../images/gal2.png);
 	transition: .5s all ease-in-out;
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
+
+	.Gallery_Container div:nth-child(2) .Pic_ProjectColor{
+
+		background: orange;
+		position: absolute;
+		width: 100%;
+		padding: 20px;
+		bottom: -50px;
+
+
+	}
+
+	.Gallery_Container div:nth-child(2) .Pic_ProjectName{
+
+			
+		position: absolute;
+		background: rgba(0,0,0,0);
+		padding: 5px;
+		padding-left: 20px;
+		color: white;
+		font-size: 17px;
+		bottom: -50px;
+		letter-spacing: .8px;
+		font-weight: 300;
+
+
+	}
 
 .Gallery_Container div:nth-child(3){
 	grid-area: Different_picture_2;
 	background: url(../images/gal3.png);
 	transition: .5s all ease-in-out;
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
+
+	.Gallery_Container div:nth-child(3) .Pic_ProjectColor{
+
+	background: orange;
+	position: absolute;
+	width: 100%;
+	padding: 20px;
+	bottom: -50px;
+
+
+	}
+
+	.Gallery_Container div:nth-child(3) .Pic_ProjectName{
+
+			
+		position: absolute;
+		background: rgba(0,0,0,0);
+		padding: 5px;
+		padding-left: 20px;
+		color: white;
+		font-size: 17px;
+		bottom: -50px;
+		letter-spacing: .8px;
+		font-weight: 300;
+
+
+	}
 
 .Gallery_Container div:nth-child(4){
 	grid-area: Different_picture_3;
 	background: url(../images/gal4.png);
 	transition: .5s all ease-in-out;
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
+
+	.Gallery_Container div:nth-child(4) .Pic_ProjectColor{
+
+		background: orange;
+		position: absolute;
+		width: 100%;
+		padding: 20px;
+		bottom: -50px;
+
+
+	}
+
+	.Gallery_Container div:nth-child(4) .Pic_ProjectName{
+
+			
+		position: absolute;
+		background: rgba(0,0,0,0);
+		padding: 5px;
+		padding-left: 20px;
+		color: white;
+		font-size: 17px;
+		bottom: -50px;
+		letter-spacing: .8px;
+		font-weight: 300;
+
+
+	}
 
 .Gallery_Container div:nth-child(5){
 	grid-area: Different_picture_4;
 	background: url(../images/gal5.png);
 	transition: .5s all ease-in-out;
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
+
+	.Gallery_Container div:nth-child(5) .Pic_ProjectColor{
+
+		background: orange;
+		position: absolute;
+		width: 100%;
+		padding: 20px;
+		bottom: -50px;
+
+
+	}
+
+	.Gallery_Container div:nth-child(5) .Pic_ProjectName{
+
+			
+		position: absolute;
+		background: rgba(0,0,0,0);
+		padding: 5px;
+		padding-left: 20px;
+		color: white;
+		font-size: 17px;
+		bottom: -50px;
+		letter-spacing: .8px;
+		font-weight: 300;
+
+
+	}
 
 /*Gallery Set2*/
 .Gallery_Container_2{
@@ -256,6 +401,20 @@ nav{
 	transition: .3s all ease-in-out;
 }
 
+.Gallery_Container div:nth-child(1):hover .Pic_ProjectColor{
+	background: orange;
+	bottom: 0;
+	opacity: .5;
+}
+
+.Gallery_Container div:nth-child(1):hover .Pic_ProjectName{
+	background: rgba(0,0,0,0);
+	bottom: 0;
+	
+}
+
+
+
 .Gallery_Container div:nth-child(2):hover{
 
 	background:url(../images/color_images/gal_02.png);
@@ -263,6 +422,18 @@ nav{
 	cursor: pointer;
 	transition: .3s all ease-in-out;
 }
+
+	.Gallery_Container div:nth-child(2):hover .Pic_ProjectColor{
+	background: orange;
+	bottom: 0;
+	opacity: .5;
+	}
+
+	.Gallery_Container div:nth-child(2):hover .Pic_ProjectName{
+		background: rgba(0,0,0,0);
+		bottom: 0;
+		
+	}
 .Gallery_Container div:nth-child(3):hover{
 
 	background:url(../images/color_images/gal_03.png);
@@ -270,6 +441,18 @@ nav{
 	cursor: pointer;
 	transition: .3s all ease-in-out;
 }
+
+	.Gallery_Container div:nth-child(3):hover .Pic_ProjectColor{
+		background: orange;
+		bottom: 0;
+		opacity: .5;
+	}
+
+	.Gallery_Container div:nth-child(3):hover .Pic_ProjectName{
+		background: rgba(0,0,0,0);
+		bottom: 0;
+		
+	}
 .Gallery_Container div:nth-child(4):hover{
 
 	background:url(../images/color_images/gal_04.png);
@@ -277,6 +460,18 @@ nav{
 	cursor: pointer;
 	transition: .3s all ease-in-out;
 }
+
+	.Gallery_Container div:nth-child(4):hover .Pic_ProjectColor{
+		background: orange;
+		bottom: 0;
+		opacity: .5;
+	}
+
+	.Gallery_Container div:nth-child(4):hover .Pic_ProjectName{
+		background: rgba(0,0,0,0);
+		bottom: 0;
+		
+	}
 .Gallery_Container div:nth-child(5):hover{
 
 	background:url(../images/color_images/gal_05.png);
@@ -284,6 +479,18 @@ nav{
 	cursor: pointer;
 	transition: .3s all ease-in-out;
 }
+
+	.Gallery_Container div:nth-child(5):hover .Pic_ProjectColor{
+		background: orange;
+		bottom: 0;
+		opacity: .5;
+	}
+
+	.Gallery_Container div:nth-child(5):hover .Pic_ProjectName{
+		background: rgba(0,0,0,0);
+		bottom: 0;
+		
+	}
 
 
 
